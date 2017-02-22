@@ -10,11 +10,23 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    public partial class Form1 : Form
+    public partial class Start : Form
     {
-        public Form1()
+        public Start()
         {
             InitializeComponent();
+        }
+
+        private void Login_button_Click(object sender, EventArgs e)
+        {
+            if(username_textbox.Text.Equals("Zaki") && password_textBox.Text.Equals("123"))
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("Wrong username/password !!");
+            }
         }
     }
 }
